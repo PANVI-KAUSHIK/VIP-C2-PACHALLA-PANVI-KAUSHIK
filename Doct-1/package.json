@@ -1,0 +1,15 @@
+{
+  "name": "book-a-doctor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN healthcare appointment booking platform.",
+  "scripts": {
+    "install:all": "npm.cmd install && npm.cmd install --prefix server && npm.cmd install --prefix client",
+    "dev": "concurrently \"npm.cmd run dev --prefix server\" \"npm.cmd start --prefix client\"",
+    "server": "npm.cmd run dev --prefix server",
+    "client": "npm.cmd start --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
